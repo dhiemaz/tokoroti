@@ -1,0 +1,23 @@
+name: Deploy PHP
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+      - uses: actions/checkout@v2
+
+      # Deploy to InfinityFree
+      - name: Deploy to InfinityFree
+        uses: infinityfree/deploy@v1
+        with:
+          username: ${{ secrets.INFINITYFREE_USERNAME }}
+          password: ${{ secrets.INFINITYFREE_PASSWORD }}
+          domain: ${{ secrets.INFINITYFREE_DOMAIN }}
+          path: ${{ github.workspace }}
