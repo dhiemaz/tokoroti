@@ -1,3 +1,3 @@
 <?php
-echo "Selamat datang di Tokoroti versi 1.3 - via GitHub Actions";
+echo "Selamat datang di Tokoroti versi 1.4 - via GitHub Actions";
 ?>
