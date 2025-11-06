@@ -21,7 +21,7 @@ jobs:
           server: ${{ secrets.INFINITYFREE_FTP_HOST }}
           protocol: ftp
           port: 21
-          server-dir: /htdocs
+          server-dir: ./htdocs/
           local-dir: ./
           exclude: |
             **/.git*
