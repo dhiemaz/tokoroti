@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  deploy:
+  deploy-infinityfree:
     runs-on: ubuntu-latest
 
     steps:
@@ -21,9 +21,9 @@ jobs:
           server: ${{ secrets.INFINITYFREE_FTP_HOST }}
           protocol: ftp
           port: 21
-          server-dir: ./htdocs/
+          server-dir: /htdocs/
           local-dir: ./
           exclude: |
-            **/.git*
+            **/.git*/**
             **/.gitignore
-            **/.github*
+            **/.github*/**
