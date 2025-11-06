@@ -18,7 +18,7 @@ jobs:
         with:
           username: ${{ secrets.INFINITYFREE_USERNAME }}
           password: ${{ secrets.INFINITYFREE_PASSWORD }}
-          domain: ${{ secrets.INFINITYFREE_FTP_HOST }}
+          server: ${{ secrets.INFINITYFREE_FTP_HOST }}
           protocol: ftp
           port: 21
           server-dir: /htdocs
